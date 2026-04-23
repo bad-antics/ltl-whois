@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_whois
+
+import std::io
+use ltl_whois as lib
+
+fn main() {
+    io::println("ltl_whois demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
